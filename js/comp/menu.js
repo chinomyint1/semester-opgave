@@ -1,7 +1,7 @@
 export function menuContainer() {
-    
+
     const menuContainer = document.querySelector(".menuContainer");
-    
+
     if (!menuContainer) return;
     
     menuContainer.innerHTML = 
