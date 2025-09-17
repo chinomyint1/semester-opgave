@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+}
+.logo, .title, .book-btn, .welcome, .guest-reviews, .footer {
+    margin: 10px 0;
+}
+.review {
+    margin: 10px 0;
+    padding: 10px;
+}
