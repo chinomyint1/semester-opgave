@@ -1,28 +1,9 @@
-export function menuContainer() {
-    
-    const menuContainer = document.querySelector(".menu");
-    
-    if (!menuContainer) return;
-    
-    menuContainer.innerHTML = 
-    `
-    <div class="mobile-container">
-    <div class="topnav">
-    <a href="#ophold">ophold</a>
-    <a href="#kontakt">kontakt</a>
-    <a href="#aktiviteter">aktiviteter</a>
-    <a href="#minliste">minliste</a>
-    </div>
-    </div>
-    `;
-}
-
 const heroContainer = document.querySelector(".hero");
 const descContainer = document.querySelector(".desc");
 
 export function renderHero() {
   heroContainer.innerHTML = `
-    <div class="hero-content" style="background-image: url('img/hero.jpg');">
+    <div class="hero-content" style="background-image: url('assests/hero/aktiviteter.jpg');">
       <h1>Aktiviteter</h1>
     </div>
   `;
