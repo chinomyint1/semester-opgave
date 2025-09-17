@@ -1,0 +1,58 @@
+.activity-card {
+  font-family: 'YourFontHere', sans-serif;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f1f3f0;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.activity-title {
+  background-color: #d9c2a7;
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.activity-image {
+  width: 100%;
+  display: block;
+}
+
+.activity-info-box {
+  background-color: #4b6a75;
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart-icon {
+  font-size: 1.2rem;
+}
+
+.btn-read-more {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.btn-read-more a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}

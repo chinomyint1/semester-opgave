@@ -1,6 +1,6 @@
 export function menuContainer() {
     
-    const menuContainer = document.querySelector(".menu");
+    const menuContainer = document.querySelector(".menuContainer");
     
     if (!menuContainer) return;
     
