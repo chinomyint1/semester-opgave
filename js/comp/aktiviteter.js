@@ -1,8 +1,8 @@
+import { fetchProducts } from "../fetch.js";
+
+
+
 const heroContainer = document.querySelector(".hero");
-const descContainer = document.querySelector(".desc");
-const infoContainer = document.querySelector(".info");
-
-
 
 
 export function renderHero() {
@@ -13,6 +13,8 @@ export function renderHero() {
     </div>
   `;
 }
+
+const descContainer = document.querySelector(".desc");
 
 export function renderDescription() {
   descContainer.innerHTML = `
@@ -29,6 +31,11 @@ export function renderDescription() {
   `;
 }
 
+const infoContainer = document.querySelector(".info");
+
+let minlisteArray = JSON.parse(localStorage.getItem('minliste')) || [] 
+
+
 function renderCard(activity) {
   infoContainer.innerHTML = `
     <div class="activity-card">
@@ -38,9 +45,7 @@ function renderCard(activity) {
       <img class="activity-image" src="${activity.image}" alt="${activity.title}">
       <div class="activity-info-box">
         <p>${activity.date}<br>kl. ${activity.time}</p>
-        <div class="heart-icon">❤️</div>
-      </div>
-      <button class="btn-read-more">
+        <button class="btn-read-more">
         <a href="#">Læs mere ▼</a>
       </button>
     </div>
