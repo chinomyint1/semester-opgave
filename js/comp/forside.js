@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add logo
     const logo = document.querySelector('.logo');
     const logoImg = document.createElement('img');
-    logoImg.src = 'assets (1)/assets/logo/logo.png';
+    logoImg.src = 'assets%20 (1)/assets/logo/logo.png';
     logoImg.alt = 'Gittes Glamping Logo';
     logoImg.onload = () => console.log('Logo loaded successfully');
     logoImg.onerror = () => console.error('Failed to load logo image');

@@ -8,7 +8,7 @@ const heroContainer = document.querySelector(".hero");
 export function renderHero() {
   heroContainer.innerHTML = `
     <div class="hero-content">
-    <img src="" alt="">
+    <img src="assets (1)/assets/heros/aktiviteter.jpg" alt="aktiviteter">
       <h1>Aktiviteter</h1>
     </div>
   `;
@@ -33,7 +33,7 @@ export function renderDescription() {
 
 const infoContainer = document.querySelector(".info");
 
-let minlisteArray = JSON.parse(localStorage.getItem('minliste')) || [] 
+let minlisteArray = JSON.parse(localStorage.getItem('')) || [] 
 
 
 function renderCard(activity) {
@@ -51,6 +51,8 @@ function renderCard(activity) {
     </div>
   `;
 }
+
+
 
 renderHero();
 renderDescription();
