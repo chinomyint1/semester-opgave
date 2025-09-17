@@ -44,5 +44,36 @@ export function renderDescription() {
 }
 
 
+const infoContainer = document.querySelector(".info");
+
+infoContainer.innerHTML = `
+        <div>
+            <p>${activities.id}</p> 
+            <p>${activities.title} kr</p> 
+            <p>${activities.description}</p> 
+            <p>${activities.date} kr</p> 
+            <p>${activities.time}</p>
+            <img src="${activities.image}" alt="${activities.title}"> 
+            <button class="btnreadmore"><a href="">læs mere  </a></button> 
+        </div>
+    `
+
+
+    let favoriteArray = JSON.parse(localStorage.getItem('info')) || [] 
+
+
+export const info = () => {
+
+    if(productListContainer){ 
+        info.forEach(element => {
+
+            infoListContainer.insertAdjacentHTML('beforeend', infoListTmpl(element))
+        });
+    }
+  }
+
+
+
+
 renderHero();
 renderDescription();
