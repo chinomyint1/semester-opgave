@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Add logo
     const logo = document.querySelector('.logo');
