@@ -62,15 +62,7 @@ infoContainer.innerHTML = `
     let favoriteArray = JSON.parse(localStorage.getItem('info')) || [] 
 
 
-export const info = () => {
 
-    if(productListContainer){ 
-        info.forEach(element => {
-
-            infoListContainer.insertAdjacentHTML('beforeend', infoListTmpl(element))
-        });
-    }
-  }
 
 
 
