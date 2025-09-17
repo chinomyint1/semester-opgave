@@ -2,9 +2,13 @@ const heroContainer = document.querySelector(".hero");
 const descContainer = document.querySelector(".desc");
 const infoContainer = document.querySelector(".info");
 
+
+
+
 export function renderHero() {
   heroContainer.innerHTML = `
     <div class="hero-content">
+    <img src="" alt="">
       <h1>Aktiviteter</h1>
     </div>
   `;
