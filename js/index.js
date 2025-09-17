@@ -1,5 +1,5 @@
-import { menucontainer } from './comp/aktiviteter.js';
+import { menuContainer } from './comp/aktiviteter.js';
 
-  menucontainer();
+  menuContainer();
 
   

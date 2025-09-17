@@ -1,4 +1,4 @@
-export function renderMenu() {
+export function menuContainer() {
     
     const menuContainer = document.querySelector(".menu");
     
