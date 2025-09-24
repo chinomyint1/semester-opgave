@@ -1,0 +1,138 @@
+/* FOOTER STYLES */
+.footer {
+    background-color: #2A4F57;
+    padding: 80px 20px 60px; /* Mere luft: 80px top, 60px bund */
+    text-align: center;
+    color: white;
+    font-family: 'Zen Loop', cursive;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Mere mellemrum mellem elementer */
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px; /* Mere mellemrum under social icons */
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+}
+
+.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Footer logo og tekst - SIDE OMG SIDE */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; /* Ekstra luft over logo/tekst */
+}
+
+.logo-footer {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.footer-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+/* Responsiv footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 70px 20px 50px; /* Mere luft på tablet */
+    }
+    
+    .footer-content {
+        gap: 40px;
+    }
+    
+    .social-icons {
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+    
+    .social-link {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+    
+    .footer-logo {
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .logo-footer {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footer-text {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 60px 15px 40px; /* Mere luft på mobil */
+    }
+    
+    .footer-content {
+        gap: 35px;
+    }
+    
+    .social-icons {
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .social-link {
+        width: 55px;
+        height: 55px;
+        font-size: 1.6rem;
+    }
+    
+    .footer-logo {
+        gap: 12px;
+        margin-top: 15px;
+    }
+    
+    .logo-footer {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .footer-text {
+        font-size: 2.4rem;
+    }
+}

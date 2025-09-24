@@ -12,10 +12,9 @@ body {
     background-color: #fff;
 }
 
-/* HERO SECTION - LÆNGERE NED */
 .hero {
     position: relative;
-    height: 140vh; /* Meget længere ned */
+    height: 140vh;
     min-height: 800px;
     display: flex;
     flex-direction: column;
@@ -62,7 +61,7 @@ body {
 
 .hero-title1 {
     font-family: 'Zen Loop', cursive;
-    font-size: 2.5rem; /* Større */
+    font-size: 2.5rem; 
     font-weight: normal;
     color: white;
     margin-bottom: 5px;
@@ -71,7 +70,7 @@ body {
 
 .hero-title2 {
     font-family: 'Zen Loop', cursive;
-    font-size: 5rem; /* Større */
+    font-size: 5rem;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
@@ -105,7 +104,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* INTRO SECTION - STØRRE OVERSKRIFT */
+/* INTRO SECTION */
 .intro {
     position: relative;
     background-color: #34626C;
@@ -204,7 +203,7 @@ body {
     border-bottom-right-radius: 60px;
 }
 
-/* TESTIMONIALS SECTION - STØRRE OVERSKRIFT MED HVID TEKST */
+/* TESTIMONIALS SECTION */
 .testimonials {
     position: relative;
     z-index: 1;
@@ -219,11 +218,11 @@ body {
 
 .testimonials-header h2 {
     font-family: 'Zen Loop', cursive;
-    font-size: 3.5rem; /* Større */
+    font-size: 3.5rem;
     text-align: center;
-    color: white; /* Hvid tekst */
+    color: white; 
     background-color: #C6B497;
-    padding: 40px 60px; /* Større padding */
+    padding: 40px 60px; 
     
     /* Specifikke hjørner */
     border-top-left-radius: 30px;
@@ -233,7 +232,7 @@ body {
     
     margin-bottom: 40px;
     width: 100%;
-    max-width: 800px; /* Lidt længere/større */
+    max-width: 800px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -258,7 +257,7 @@ body {
 
 .testimonial-card h3 {
     font-family: 'Zen Loop', cursive;
-    font-size: 2rem; /* Større */
+    font-size: 2rem; 
     color: white;
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
