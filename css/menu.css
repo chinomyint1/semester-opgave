@@ -1,0 +1,130 @@
+/* MENU STYLES */
+.menuContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: 'Zen Loop', cursive;
+}
+
+/* Burger menu ikon */
+.mobile-container {
+    position: relative;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+/* Burger menu knap */
+.burger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.burger-line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #849B97;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Menu links - skjult som standard */
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #849B97;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    
+    /* Specifikke hjørner som de andre elementer */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu-links.active {
+    display: block;
+}
+
+.menu-links a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.menu-links a:last-child {
+    border-bottom: none;
+}
+
+.menu-links a:hover {
+    background-color: #6a827d;
+}
+
+/* Burger animation når menu er åben */
+.burger-menu.active .burger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #FFFFFF;
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #FFFFFF;
+}
+
+/* Når menu er åben, skift burger farve */
+.burger-menu.active .burger-line {
+    background-color: #FFFFFF;
+}
+
+/* Responsiv menu */
+@media (max-width: 768px) {
+    .menu-links {
+        min-width: 180px;
+    }
+    
+    .menu-links a {
+        font-size: 1.6rem;
+        padding: 18px 22px;
+    }
+    
+    .burger-line {
+        width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-links {
+        min-width: 160px;
+    }
+    
+    .menu-links a {
+        font-size: 1.4rem;
+        padding: 15px 20px;
+    }
+    
+    .burger-line {
+        width: 22px;
+    }
+}
