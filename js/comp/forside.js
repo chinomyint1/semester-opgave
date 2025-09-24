@@ -1,10 +1,13 @@
 // HERO
 function Hero() {
   return `
-    <img src="path/to/logo.png" alt="Gittes Glamping Logo" class="logo" />
-    <h1>Gittes Glamping</h1>
+    <img src="assets (1)/assets/logo/logo.png" alt="Gittes Glamping Logo" class="logo" />
+    <div class="hero-titles">
+      <h1 class="hero-title1">Gittes</h1>
+      <h2 class="hero-title2">Glamping</h2>
+    </div>
     <a href="#" class="btn-book">BOOK NU</a>
-    <img src="path/to/hero-image.jpg" alt="Hero billede" class="hero-image" />
+    <img src="assets (1)/assets/heros/forside.jpg" alt="Hero billede" class="hero-image" />
   `;
 }
 
@@ -14,7 +17,7 @@ function Intro() {
     <div class="intro-content">
       <h2>Kom og prøv glamping hos Gitte!</h2>
       <p>
-        Vi er stolte af at byde dig velkommen til Gitte’s Glamping, hvor
+        Vi er stolte af at byde dig velkommen til Gitte's Glamping, hvor
         hjertevarme og omsorg møder naturens skønhed og eventyr. Vores
         dedikerede team, anført af Gitte selv, er her for at skabe den
         perfekte ramme om din luksuriøse udendørsoplevelse. Vi stræber efter
@@ -25,7 +28,7 @@ function Intro() {
         indre ro med vores wellnessaktiviteter.
       </p>
       <div class="intro-extra">
-        <img src="path/to/dame.jpg" alt="Gitte" class="intro-image" />
+        <img src="assets (1)/assets/heros/gitte.jpg" alt="Gitte" class="intro-image" />
         <a href="#" class="btn-view">SE VORES OPHOLD</a>
       </div>
     </div>
