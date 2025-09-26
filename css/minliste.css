@@ -1,0 +1,133 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+#activities-container,
+#favorites-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.activity-mobile-card {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.activity-label {
+  background-color: #d4b28f;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.activity-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.activity-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0; 
+}
+
+
+.activity-details-box {
+  background-color: #2d5b63;
+  color: white;
+  padding: 15px 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  top: -10px;
+  z-index: 1;
+}
+
+
+.details-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-time {
+  font-size: 14px;
+}
+
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.read-more-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 6px 12px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.activity-description {
+  display: none;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.activity-description.active {
+  display: block;
+}
+
+
+.remove-fav-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 6px 12px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.imglogo {
+
+  width: 100%;
+}

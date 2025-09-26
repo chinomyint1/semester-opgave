@@ -5,9 +5,14 @@ export function footer() {
 
   footer.innerHTML = `
     <div class="footer-content">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <img src="assets/logo/logo.png" alt="logo" class="logoFooter">
+      <div class="social-icons">
+        <img class="facebook" src="assets (1)/assets/icons/square-facebook.svg" alt="Facebook">
+        <img class="instagram" src="assets (1)/assets/icons/square-instagram.svg" alt="Instagram">
+      </div>
+      <div class="brand">
+        <img class="logo" src="assets (1)/assets/logo/logo.png" alt="Gittes Glamping Logo">
+        <span class="brand-name">Gittes Glamping</span>
+      </div>
     </div>
   `;
 }

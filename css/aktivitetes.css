@@ -1,61 +1,179 @@
-.activity-card {
-  font-family: 'YourFontHere', sans-serif;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #f1f3f0;
-  border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+#activities-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+
+.activity-mobile-card {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.activity-label {
+  background-color: #d4b28f;
+  color: white;
+  font-size: 40px;
+  padding: 10px 20px;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+
+
+.activity-image-wrapper {
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.activity-title {
-  background-color: #d9c2a7;
-  padding: 1rem;
-  border-bottom-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 .activity-image {
   width: 100%;
+  height: auto;
   display: block;
 }
 
-.activity-info-box {
-  background-color: #4b6a75;
+
+.activity-details-box {
+  background-color: #2d5b63;
   color: white;
-  padding: 1rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  padding: 15px 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  top: -10px; 
+  z-index: 1;
+}
+
+
+.details-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.heart-icon {
-  font-size: 1.2rem;
+.activity-time {
+  font-size: 14px;
 }
 
-.btn-read-more {
-  background-color: transparent;
+.favorite-btn {
+  background: none;
   border: none;
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
+  font-size: 20px;
+  color: white;
   cursor: pointer;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
 }
 
-.btn-read-more a {
+
+.read-more-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 6px 12px;
   color: white;
-  text-decoration: none;
-  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
   text-align: center;
 }
+
+.activity-label {
+  background-color: #d4b28f;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.activity-label p {
+  margin: 0;
+}
+
+
+.activity-description {
+  display: none;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.activity-description.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* HERO */
 .hero-content {
