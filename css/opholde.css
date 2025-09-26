@@ -1,0 +1,79 @@
+.opholde {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.opholde img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  object-fit: cover;
+}
+
+.ophold-tekstboks {
+  background-color: #296872; 
+  padding: 2rem;
+  color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.ophold-tekstboks h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+}
+
+.ophold-tekstboks p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.weekendtur-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.weekendtur-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+.weekendtur-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: rgba(210, 180, 140, 0.95);
+  padding: 1em;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #7a9e9f;
+  color: white;
+  border: none;
+  padding: 0.7em 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+}

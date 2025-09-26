@@ -1,16 +1,453 @@
-body {
+/* Reset og basisstyling */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop:ital@0;1&display=swap');
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #fff;
+}
+
+.hero {
+    position: relative;
+    height: 140vh;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #34626C80;
+    z-index: -1;
+}
+
+.hero .logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.hero-titles {
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.hero-title1 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 2.5rem; 
+    font-weight: normal;
     color: white;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero-title2 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    line-height: 1.1;
+}
+
+.hero .btn-book {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 25px 60px;
+    text-decoration: none;
+    font-family: 'Zen Loop', cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.hero .btn-book:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* INTRO SECTION */
+.intro {
+    position: relative;
+    background-color: #34626C;
+    padding: 120px 20px 100px;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #34626C;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.intro-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.intro-content h2 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 3.5rem; /* Større */
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 50px;
     text-align: center;
 }
-.container {
-    padding: 20px;
+
+.intro-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
-.logo, .title, .book-btn, .welcome, .guest-reviews, .footer {
-    margin: 10px 0;
+
+.intro-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #839B97;
 }
-.review {
-    margin: 10px 0;
-    padding: 10px;
+
+.btn-view {
+    display: inline-block;
+    background-color: #839B97;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-family: 'Zen Loop', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-view:hover {
+    background-color: #6a827d;
+    transform: translateY(-2px);
+}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #34626C;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 60px;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+    position: relative;
+    z-index: 1;
+    padding: 100px 20px 80px;
+    background-color: #CFD3CE;
+}
+
+.testimonials-header {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.testimonials-header h2 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white; 
+    background-color: #C6B497;
+    padding: 40px 60px; 
+    
+    /* Specifikke hjørner */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #839B97;
+    padding: 30px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial-card h3 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 2rem; 
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 768px) {
+    .hero {
+        height: 120vh;
+        min-height: 700px;
+    }
+    
+    .hero .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .hero-title1 {
+        font-size: 2rem;
+    }
+    
+    .hero-title2 {
+        font-size: 4rem;
+    }
+    
+    .hero .btn-book {
+        padding: 20px 50px;
+        font-size: 1.5rem;
+    }
+    
+    .intro {
+        padding: 100px 20px 80px;
+        margin-top: -80px;
+    }
+    
+    .intro::before {
+        top: -80px;
+        height: 80px;
+        border-top-left-radius: 50px;
+    }
+    
+    .intro::after {
+        bottom: -60px;
+        height: 60px;
+        border-bottom-right-radius: 50px;
+    }
+    
+    .intro-content h2 {
+        font-size: 2.8rem;
+    }
+    
+    .intro-content p {
+        font-size: 1.1rem;
+    }
+    
+    .intro-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .btn-view {
+        padding: 15px 40px;
+        font-size: 1.3rem;
+    }
+    
+    .testimonials {
+        padding: 80px 20px 60px;
+    }
+    
+    .testimonials-header h2 {
+        font-size: 2.8rem;
+        padding: 30px 40px;
+        max-width: 90%;
+    }
+    
+    .testimonial-card h3 {
+        font-size: 1.7rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 110vh;
+        min-height: 600px;
+    }
+    
+    .hero .logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .hero-title1 {
+        font-size: 1.7rem;
+    }
+    
+    .hero-title2 {
+        font-size: 3.2rem;
+    }
+    
+    .hero .btn-book {
+        padding: 15px 40px;
+        font-size: 1.2rem;
+    }
+    
+    .intro {
+        padding: 80px 15px 60px;
+        margin-top: -60px;
+    }
+    
+    .intro::before {
+        top: -60px;
+        height: 60px;
+        border-top-left-radius: 40px;
+    }
+    
+    .intro::after {
+        bottom: -40px;
+        height: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    
+    .intro-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .intro-content p {
+        font-size: 1rem;
+    }
+    
+    .intro-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .btn-view {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+    
+    .testimonials {
+        padding: 60px 15px 40px;
+    }
+    
+    .testimonials-header h2 {
+        font-size: 2.2rem;
+        padding: 25px 30px;
+        max-width: 95%;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .testimonial-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet layout - 2 kolonner */
+@media (min-width: 769px) {
+    .testimonials-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Desktop layout - 3 kolonner */
+@media (min-width: 1024px) {
+    .testimonials-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .testimonials-cards .testimonial-card:last-child:nth-child(3n+1) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        justify-self: center;
+    }
 }
