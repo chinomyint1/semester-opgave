@@ -3,7 +3,8 @@ const app = document.getElementById("app");
 
 const header = document.createElement("header");
 header.innerHTML = `
-  <div class="logo">G</div>
+  <div class="logo">
+   <img src="assets (1)/assets/logo/logo.png" alt="Logo" /></div>
   <button class="menu-button">☰</button>
 `;
 app.appendChild(header);
